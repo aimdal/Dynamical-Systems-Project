@@ -25,9 +25,7 @@ sigmat = 4
 tau1 = 1
 tau2 = 80
 oop = 6
-eq scig.py
-p = 
-xdot = 
+eq scig.py 
 x' = (-glTC*(x-vlTC)-gca*(1/(1+e^(-(x-thetam)/sigmam)))^3*(y*(x-vca)-gTC*(1/(1+e^(-(z-thetas)/sigmas)))*(x-vsynRE)))/Cm
 y' = eTC*(((1/(1+e^(-(x-thetah)/sigmah)))-y)/(tau1+(tau2-tau1)*(1/(1+e^(-(x-thetat)/sigmat)))))
 z' = (-glRE*(z-vlRE)-(gca*(1/(1+e^(-(z-thetam)/sigmam)))^3)*w*(z-vca)-((gRE/(2*oop+1))*f(x,p,xdot)*(z-vsynTC))/Cm
