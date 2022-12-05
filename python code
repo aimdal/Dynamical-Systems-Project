@@ -1,0 +1,9 @@
+import math
+
+def f(x,p,xdot):
+    temp = 0
+    for i in range(-6,7):
+        temp += [1+exp((x[i]-2)/-20)]**(-1)
+    xdot = temp
+    
+    #there is an issue in the subscript for this still, my SCIGMA also will not recognize it still
